@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.ace.prms.sb.model.lookup">
+		<field name="uuid" type="String" />
+		<field name="lookupId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="lookupKey" type="String" />
+		<field name="lookupValue" type="String" />
+		<field name="lookupName" type="int" />
+	</model>
+	<model name="com.ace.prms.sb.model.plantation">
+		<field name="uuid" type="String" />
+		<field name="plantId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="plantType" type="String" />
+		<field name="name" type="String" />
+		<field name="origin" type="String" />
+		<field name="yieldMeasure" type="int" />
+		<field name="lifeSpan" type="int" />
+		<field name="breed" type="String" />
+	</model>
+</model-hints>

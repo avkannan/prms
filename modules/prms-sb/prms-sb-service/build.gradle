@@ -1,0 +1,16 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "org.osgi", name: "org.osgi.annotation.versioning"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly project(":modules:prms-sb:prms-sb-api")
+	// https://mvnrepository.com/artifact/com.liferay.portal/release.portal.api
+	implementation 'com.liferay.portal:release.portal.api:7.2.1-ga2'
+	
+}
+
+buildService {
+	apiDir = "../prms-sb-api/src/main/java"
+}
+
+group = "com.ace.prms.sb"

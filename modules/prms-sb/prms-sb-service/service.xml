@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.ace.prms.sb">
+	<namespace>prms</namespace>
+	<entity local-service="true" name="plantation" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+		<column name="plantId" primary="true" type="long" />
+
+		<!-- Group instance -->
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="plantType" type="String" />
+		<column name="name" type="String" />
+		<column name="origin" type="String" />
+		<column name="yieldMeasure" type="int" />
+		<column name="lifeSpan" type="int" />
+		<column name="breed" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+	</entity>
+	<entity local-service="true" name="lookup" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+		<column name="lookupId" primary="true" type="long" />
+
+		<!-- Group instance -->
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="lookupKey" type="String" />
+		<column name="lookupValue" type="String" />
+		<column name="lookupName" type="int" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="lookupName" />
+		</order>
+	</entity>
+</service-builder>

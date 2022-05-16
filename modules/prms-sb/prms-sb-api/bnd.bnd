@@ -1,0 +1,10 @@
+Bundle-Name: prms-sb-api
+Bundle-SymbolicName: com.ace.prms.sb.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.ace.prms.sb.exception,\
+	com.ace.prms.sb.model,\
+	com.ace.prms.sb.service,\
+	com.ace.prms.sb.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../prms-sb-service/service.xml
